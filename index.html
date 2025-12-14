@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Professional Calculator </title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <!-- Custom CSS -->
+  <link rel="icon" href="Calculator.png" type="image/x-icon" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div class="container py-5 d-flex flex-column align-items-center">
+    <header class="mb-4 text-center">
+      <h1 class="display-4 fw-bold text-white">Professional Calculator</h1>
+      <p class="lead text-light">A colorful, smooth & easy-to-use calculator built for you</p>
+    </header>
+
+    <div class="calculator shadow-lg rounded-4 p-4">
+      <!-- Expression history display -->
+      <div id="expression" class="expression-display text-end text-white fs-5 mb-1"></div>
+      <!-- Main display -->
+      <input type="text" id="display" class="form-control fs-2 text-end mb-4" readonly placeholder="0" />
+
+      <div class="btn-grid">
+        <!-- Row 1 -->
+        <button class="btn btn-danger btn-lg" id="clear">C</button>
+        <button class="btn btn-warning btn-lg" id="backspace">←</button>
+        <button class="btn btn-warning btn-lg" id="sign">+/-</button>
+        <button class="btn btn-primary btn-lg operator" data-op="/">÷</button>
+
+        <!-- Row 2 -->
+        <button class="btn btn-outline-light btn-lg num">7</button>
+        <button class="btn btn-outline-light btn-lg num">8</button>
+        <button class="btn btn-outline-light btn-lg num">9</button>
+        <button class="btn btn-primary btn-lg operator" data-op="*">×</button>
+
+        <!-- Row 3 -->
+        <button class="btn btn-outline-light btn-lg num">4</button>
+        <button class="btn btn-outline-light btn-lg num">5</button>
+        <button class="btn btn-outline-light btn-lg num">6</button>
+        <button class="btn btn-primary btn-lg operator" data-op="-">−</button>
+
+        <!-- Row 4 -->
+        <button class="btn btn-outline-light btn-lg num">1</button>
+        <button class="btn btn-outline-light btn-lg num">2</button>
+        <button class="btn btn-outline-light btn-lg num">3</button>
+        <button class="btn btn-primary btn-lg operator" data-op="+">+</button>
+
+        <!-- Row 5 -->
+        <button class="btn btn-warning btn-lg" id="sqrt">√</button>
+        <button class="btn btn-outline-light btn-lg num">0</button>
+        <button class="btn btn-warning btn-lg" id="dot">.</button>
+        <button class="btn btn-success btn-lg" id="equals">=</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="index.js"></script>
+</body>
+</html>
